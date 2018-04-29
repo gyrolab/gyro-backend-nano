@@ -3,7 +3,7 @@
  *  Copyright (C) 2018 Roland Singer <roland@desertbit.com>
  */
 
-package nanovgo
+package nano
 
 import (
 	"fmt"

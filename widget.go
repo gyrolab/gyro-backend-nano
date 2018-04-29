@@ -3,14 +3,12 @@
  *  Copyright (C) 2018 Roland Singer <roland@desertbit.com>
  */
 
-package nanovgo
+package nano
 
 import "github.com/gyrolab/gyro"
 
 type widget interface {
 	gyro.Widget
-
-	setParent(p widget)
 
 	render(ctx *context)
 	renderWidgets(ctx *context)

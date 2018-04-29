@@ -3,13 +3,13 @@
  *  Copyright (C) 2018 Roland Singer <roland@desertbit.com>
  */
 
-package nanovgo
+package nano
 
 import (
-	"github.com/desertbit/closer"
 	"github.com/gyrolab/gyro"
 	"github.com/gyrolab/nanovgo"
 
+	"github.com/desertbit/closer"
 	"github.com/goxjs/gl"
 	"github.com/goxjs/glfw"
 )
@@ -61,7 +61,7 @@ func (b *Backend) NewWindow(
 		nc:    nc,
 		title: title,
 	}
-	w.widgets = newWidgets(w)
+	w.widgets = newWidgets(nil) // TODO: must pass the window
 	w.Closer = closer.New(w.onClose)
 
 	// Register the window to the app.

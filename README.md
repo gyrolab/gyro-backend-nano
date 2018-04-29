@@ -1,4 +1,4 @@
-# Gyro NanoVGo Backend
+# Gyro Nano Backend
 
 - GLFW
 - OpenGL

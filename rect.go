@@ -3,7 +3,7 @@
  *  Copyright (C) 2018 Roland Singer <roland@desertbit.com>
  */
 
-package nanovgo
+package nano
 
 import (
 	"github.com/gyrolab/gyro"
@@ -122,10 +122,6 @@ func (r *Rect) SetBorderColor(c gyro.Color) {
 //###############//
 //### Private ###//
 //###############//
-
-func (r *Rect) setParent(p widget) {
-	r.parent = p
-}
 
 func (r *Rect) xF() float32 {
 	return r.x

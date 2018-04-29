@@ -3,7 +3,7 @@
  *  Copyright (C) 2018 Roland Singer <roland@desertbit.com>
  */
 
-package nanovgo
+package nano
 
 import "github.com/gyrolab/gyro"
 
@@ -20,7 +20,7 @@ func newWidgets(parent widget) *widgets {
 
 func (ws *widgets) AddWidget(gw gyro.Widget) {
 	w := gw.(widget)
-	w.setParent(ws.parent)
+	//w.setParent(ws.parent) // TODO
 	ws.widgets = append(ws.widgets, w)
 }
 
